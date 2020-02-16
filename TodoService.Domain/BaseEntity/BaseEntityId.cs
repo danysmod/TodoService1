@@ -1,4 +1,4 @@
-namespace Domain
+namespace TodoService.Domain
 {
     using System;
     

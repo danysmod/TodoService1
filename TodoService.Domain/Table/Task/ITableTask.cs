@@ -1,6 +1,6 @@
-namespace Domain.Task
+namespace TodoService.Domain
 {
-    public interface ITask
+    public interface ITableTask
     {
         void Complete();
         void Delete();

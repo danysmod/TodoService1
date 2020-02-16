@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TodoService.App/1.0.0": {
+        "dependencies": {
+          "TodoService.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TodoService.App.dll": {}
+        }
+      },
+      "TodoService.Domain/1.0.0": {
+        "runtime": {
+          "TodoService.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TodoService.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TodoService.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

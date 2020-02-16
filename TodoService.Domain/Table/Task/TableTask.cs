@@ -1,7 +1,7 @@
-namespace Domain.Task
+namespace TodoService.Domain
 {
     using System;
-    public class Task : BaseEntity, ITask
+    public class TableTask : BaseEntity, ITableTask
     {
         public TaskText Text { get; protected set; }
         public TaskState State { get; protected set; }

@@ -1,4 +1,4 @@
-namespace Domain.Task
+namespace TodoService.Domain
 {
     public struct TaskState
     {

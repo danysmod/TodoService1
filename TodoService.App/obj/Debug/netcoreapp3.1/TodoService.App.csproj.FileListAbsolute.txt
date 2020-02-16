@@ -1,0 +1,11 @@
+C:\Projects\TodoService1\TodoService.App\bin\Debug\netcoreapp3.1\TodoService.App.deps.json
+C:\Projects\TodoService1\TodoService.App\bin\Debug\netcoreapp3.1\TodoService.App.dll
+C:\Projects\TodoService1\TodoService.App\bin\Debug\netcoreapp3.1\TodoService.App.pdb
+C:\Projects\TodoService1\TodoService.App\bin\Debug\netcoreapp3.1\TodoService.Domain.dll
+C:\Projects\TodoService1\TodoService.App\bin\Debug\netcoreapp3.1\TodoService.Domain.pdb
+C:\Projects\TodoService1\TodoService.App\obj\Debug\netcoreapp3.1\TodoService.App.csprojAssemblyReference.cache
+C:\Projects\TodoService1\TodoService.App\obj\Debug\netcoreapp3.1\TodoService.App.AssemblyInfoInputs.cache
+C:\Projects\TodoService1\TodoService.App\obj\Debug\netcoreapp3.1\TodoService.App.AssemblyInfo.cs
+C:\Projects\TodoService1\TodoService.App\obj\Debug\netcoreapp3.1\TodoService.App.csproj.CopyComplete
+C:\Projects\TodoService1\TodoService.App\obj\Debug\netcoreapp3.1\TodoService.App.dll
+C:\Projects\TodoService1\TodoService.App\obj\Debug\netcoreapp3.1\TodoService.App.pdb
