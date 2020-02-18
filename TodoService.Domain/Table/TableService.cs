@@ -21,5 +21,13 @@
             return task;
         }
 
+        public async Task<ITable> CreateTable(TableName name)
+        {
+            var table = tableFactory.NewTable(name);
+            await tableRepository.AddTable(table);
+
+            return table;
+        }
+
     }
 }

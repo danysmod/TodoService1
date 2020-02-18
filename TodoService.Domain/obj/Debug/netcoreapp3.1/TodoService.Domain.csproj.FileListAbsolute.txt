@@ -6,3 +6,11 @@ C:\Projects\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.
 C:\Projects\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.AssemblyInfo.cs
 C:\Projects\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.dll
 C:\Projects\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.pdb
+C:\Dany\GIT\TodoService1\TodoService.Domain\bin\Debug\netcoreapp3.1\TodoService.Domain.deps.json
+C:\Dany\GIT\TodoService1\TodoService.Domain\bin\Debug\netcoreapp3.1\TodoService.Domain.dll
+C:\Dany\GIT\TodoService1\TodoService.Domain\bin\Debug\netcoreapp3.1\TodoService.Domain.pdb
+C:\Dany\GIT\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.AssemblyInfoInputs.cache
+C:\Dany\GIT\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.AssemblyInfo.cs
+C:\Dany\GIT\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.dll
+C:\Dany\GIT\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.pdb
+C:\Dany\GIT\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.csprojAssemblyReference.cache

@@ -7,5 +7,7 @@
         Task<ITable> GetTable(BaseEntityId entityId);
 
         Task AddTask(ITableTask task);
+
+        Task AddTable(ITable table);
     }
 }

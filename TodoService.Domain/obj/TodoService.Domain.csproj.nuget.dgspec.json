@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj": {}
+    "C:\\Dany\\GIT\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj": {
+    "C:\\Dany\\GIT\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj",
+        "projectUniqueName": "C:\\Dany\\GIT\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj",
         "projectName": "TodoService.Domain",
-        "projectPath": "C:\\Projects\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj",
+        "projectPath": "C:\\Dany\\GIT\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj",
         "packagesPath": "C:\\Users\\danys\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\TodoService1\\TodoService.Domain\\obj\\",
+        "outputPath": "C:\\Dany\\GIT\\TodoService1\\TodoService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danys\\AppData\\Roaming\\NuGet\\NuGet.Config",

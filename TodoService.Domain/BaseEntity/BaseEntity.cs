@@ -4,8 +4,8 @@ namespace TodoService.Domain
     
     public abstract class BaseEntity : IBaseEntity
     {
-        public BaseEntityId Id { get; protected set; }
-        public DateTime CreateDate { get; protected set; }
-        public DateTime EditDate { get; protected set; }
+        public BaseEntityId Id { get; set; }
+        public DateTime CreateDate { get; set; }
+        public DateTime? EditDate { get; set; } = null;
     }
 }

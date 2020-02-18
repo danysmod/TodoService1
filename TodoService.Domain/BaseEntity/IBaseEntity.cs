@@ -5,6 +5,6 @@ namespace TodoService.Domain
     {
         BaseEntityId Id { get; }
         DateTime CreateDate { get; }
-        DateTime EditDate { get; }
+        DateTime? EditDate { get; }
     }
 }

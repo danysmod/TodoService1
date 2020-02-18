@@ -10,6 +10,7 @@
         {
             Id = new BaseEntityId(Guid.NewGuid());
             Name = tableName;
+            CreateDate = DateTime.Now;
         }
 
         protected Table()

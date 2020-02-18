@@ -17,5 +17,7 @@ namespace TodoService.Domain
 
             _text = name;
         }
+
+        public override string ToString() => _text;
     }
 }

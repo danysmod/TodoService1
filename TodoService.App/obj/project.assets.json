@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\TodoService1\\TodoService.App\\TodoService.App.csproj",
+      "projectUniqueName": "C:\\Dany\\GIT\\TodoService1\\TodoService.App\\TodoService.App.csproj",
       "projectName": "TodoService.App",
-      "projectPath": "C:\\Projects\\TodoService1\\TodoService.App\\TodoService.App.csproj",
+      "projectPath": "C:\\Dany\\GIT\\TodoService1\\TodoService.App\\TodoService.App.csproj",
       "packagesPath": "C:\\Users\\danys\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\TodoService1\\TodoService.App\\obj\\",
+      "outputPath": "C:\\Dany\\GIT\\TodoService1\\TodoService.App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danys\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Projects\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj": {
-              "projectPath": "C:\\Projects\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj"
+            "C:\\Dany\\GIT\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj": {
+              "projectPath": "C:\\Dany\\GIT\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj"
             }
           }
         }

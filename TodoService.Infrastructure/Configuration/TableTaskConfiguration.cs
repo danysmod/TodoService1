@@ -26,13 +26,12 @@
             builder.Property(x => x.CreateDate)
                    .HasConversion(
                             v => v,
-                            v => DateTime.SpecifyKind(v, DateTimeKind.Utc))
-                   .IsRequired();
+                            v => DateTime.SpecifyKind(v, DateTimeKind.Utc));
 
             builder.Property(x => x.EditDate)
                    .HasConversion(
                             v => v,
-                            v => DateTime.SpecifyKind(v, DateTimeKind.Utc));
+                            v => DateTime.SpecifyKind((DateTime)v, DateTimeKind.Utc));
 
             builder.Property(x => x.TableId)
                    .HasConversion(
