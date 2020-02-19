@@ -2,17 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>API</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentMediator" Version="0.4.7" />
     <PackageReference Include="FluentMediator.Microsoft.Extensions.DependencyInjection" Version="0.4.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TodoService.App\TodoService.App.csproj" />
     <ProjectReference Include="..\TodoService.Domain\TodoService.Domain.csproj" />
+    <ProjectReference Include="..\TodoService.Identity\TodoService.Identity.csproj" />
     <ProjectReference Include="..\TodoService.Infrastructure\TodoService.Infrastructure.csproj" />
   </ItemGroup>
 

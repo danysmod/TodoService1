@@ -9,7 +9,7 @@
     {
         public void Configure(EntityTypeBuilder<Entities.TableTask> builder)
         {
-            builder.ToTable("TasksTable");
+            builder.ToTable("TableTasks");
 
             builder.Property(b => b.Id)
                    .HasConversion(

@@ -15,9 +15,25 @@ namespace TodoService.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.1")
+                .HasAnnotation("ProductVersion", "3.1.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("TodoService.Infrastructure.Entities.Account", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("EditDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Accounts");
+                });
 
             modelBuilder.Entity("TodoService.Infrastructure.Entities.Table", b =>
                 {
@@ -50,6 +66,9 @@ namespace TodoService.Infrastructure.Migrations
                     b.Property<DateTime?>("EditDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("State")
+                        .HasColumnType("int");
+
                     b.Property<Guid>("TableId")
                         .HasColumnType("uniqueidentifier");
 
@@ -59,7 +78,7 @@ namespace TodoService.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TasksTable");
+                    b.ToTable("TableTasks");
                 });
 #pragma warning restore 612, 618
         }

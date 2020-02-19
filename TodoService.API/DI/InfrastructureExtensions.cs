@@ -1,4 +1,4 @@
-﻿namespace TodoService.API.DI
+﻿namespace API.DI
 {
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
@@ -13,10 +13,12 @@
             IConfiguration configuration)
         {
             services.AddScoped<ITableFactory, EntityFactory>();
+            services.AddScoped<IAccountFactory, EntityFactory>();
 
             services.AddDbContext<TodoServiceContext>(
                 options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<ITableRepository, TableRepository>();
 
             return services;

@@ -20,3 +20,5 @@ C:\Dany\GIT\TodoService1\TodoService.App\obj\Debug\netcoreapp3.1\TodoService.App
 C:\Dany\GIT\TodoService1\TodoService.App\obj\Debug\netcoreapp3.1\TodoService.App.csproj.CopyComplete
 C:\Dany\GIT\TodoService1\TodoService.App\obj\Debug\netcoreapp3.1\TodoService.App.dll
 C:\Dany\GIT\TodoService1\TodoService.App\obj\Debug\netcoreapp3.1\TodoService.App.pdb
+C:\Dany\GIT\TodoService1\TodoService.App\bin\Debug\netcoreapp3.1\TodoService.Identity.dll
+C:\Dany\GIT\TodoService1\TodoService.App\bin\Debug\netcoreapp3.1\TodoService.Identity.pdb

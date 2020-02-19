@@ -1,6 +1,6 @@
-﻿namespace TodoService.API.DI
+﻿namespace API.DI
 {
-    using App.Boundaries.Table.CreateTable;
+    using App.UseCase.Account;
     using App.UseCase.Table;
     using Microsoft.Extensions.DependencyInjection;
     using TodoService.Domain;
@@ -9,8 +9,11 @@
     {
         public static IServiceCollection AddUseCases(this IServiceCollection services)
         {
-            services.AddScoped<IUseCase, CreateTableUseCase>();
+            services.AddScoped<App.Boundaries.Table.CreateTable.IUseCase, CreateTableUseCase>();
             services.AddScoped<TableService>();
+
+            services.AddScoped<App.Boundaries.Account.Register.IUseCase, RegisterUseCase>();
+            services.AddScoped<AccountService>();
 
             return services;
         }

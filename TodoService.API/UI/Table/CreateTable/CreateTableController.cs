@@ -4,12 +4,14 @@
     using System.Threading.Tasks;
     using App.Boundaries.Table.CreateTable;
     using FluentMediator;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using TodoService.Domain;
 
     [Route("api/table/[controller]")]
     [ApiController]
+    [Authorize]
     public class CreateTableController : Controller
     {
         [HttpPost]

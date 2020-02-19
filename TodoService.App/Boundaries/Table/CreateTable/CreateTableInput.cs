@@ -1,7 +1,7 @@
 ﻿namespace App.Boundaries.Table.CreateTable
 {
     using TodoService.Domain;
-    public class CreateTableInput
+    public sealed class CreateTableInput
     {
         public CreateTableInput(TableName tableName)
         {

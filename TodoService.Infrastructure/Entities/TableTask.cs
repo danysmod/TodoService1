@@ -10,6 +10,8 @@
             TableId = table.Id;
             Id = new BaseEntityId(Guid.NewGuid());
             Text = taskText;
+            CreateDate = DateTime.Now;
+            State = TaskState.Actual;
         }
 
         protected TableTask()

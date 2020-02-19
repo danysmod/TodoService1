@@ -2,10 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>App</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TodoService.Domain\TodoService.Domain.csproj" />
+    <ProjectReference Include="..\TodoService.Identity\TodoService.Identity.csproj" />
   </ItemGroup>
 
 </Project>

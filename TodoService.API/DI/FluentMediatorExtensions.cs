@@ -1,8 +1,9 @@
-﻿namespace TodoService.API.DI
+﻿namespace API.DI
 {
     using Microsoft.Extensions.DependencyInjection;
     using FluentMediator;
     using App.Boundaries.Table.CreateTable;
+    using App.Boundaries.Account.Register;
 
     public static class FluentMediatorExtensions
     {
@@ -13,7 +14,13 @@
                 {
                     builder.On<CreateTableInput>()
                            .PipelineAsync()
-                           .Call<IUseCase>((handler, request) => handler.Execute(request));
+                           .Call<App.Boundaries.Table.CreateTable.IUseCase>(
+                                (handler, request) => handler.Execute(request));
+
+                    builder.On<RegisterInput>()
+                           .PipelineAsync()
+                           .Call<App.Boundaries.Account.Register.IUseCase>(
+                                (handler, request) => handler.Execute(request));
                 });
 
             return services;
