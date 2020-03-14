@@ -66,7 +66,7 @@ export default class TodoService{
     }
 
     register = async (userData) => {
-        console.log(`Register with values ${userData}`)
+        return await this.postDataWithoutToken("Register",userData);
     }
 
     getAccountDetails = async (token) => {
