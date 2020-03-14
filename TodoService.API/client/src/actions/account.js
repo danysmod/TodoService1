@@ -25,10 +25,15 @@ const loginUserError = (error) => {
     }
 }
 
-// const registerUser = (service, dispatch) => (data) => {
-//     dispatch(loginUserRequest())
-//     servicey
-// }
+const registerUser = (service, dispatch) => (data) => {
+    dispatch(loginUserRequest())
+    service.register(data)
+        .then((data) => {
+            localStorage.setItem("token", data.token)
+            dispatch(loginUser(data.accountId))
+        })
+        .catch((error) => loginUserError(error))
+}
 
 const fetchUser = (service, dispatch) => (data) => {
     dispatch(loginUserRequest())
@@ -43,5 +48,6 @@ const fetchUser = (service, dispatch) => (data) => {
 export{
     loginUser,
     fetchUser,
-    logoutUser
+    logoutUser,
+    registerUser
 }

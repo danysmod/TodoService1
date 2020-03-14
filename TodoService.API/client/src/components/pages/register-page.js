@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import { Redirect, Link } from 'react-router-dom'
 import './styles/login-page.css'
 import { connect } from 'react-redux'
+import {registerUser} from '../../actions/account'
 import Spinner from '../spinner/spinner'
+import { compose } from 'recompose'
+import withService from '../hoc/with-service'
 
 class RegisterPage extends Component{
     
@@ -20,7 +23,13 @@ class RegisterPage extends Component{
 
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state)
+        const {username,password,email} = this.state;
+        const data ={
+            username,
+            password,
+            email
+        }
+        this.props.registerUser(data);
     }
 
     render(){
@@ -85,12 +94,17 @@ class RegisterPage extends Component{
     }
 }
 
-const mapDispatchToProps = ({}) => {
-    
+const mapDispatchToProps = (dispatch,{service}) => {
+    return{
+        registerUser: registerUser(service,dispatch)
+    }
 }
 
 const mapStateToProps = ({account:{isAuth, loading}}) => {
     return{isAuth, loading}
 }
 
-export default connect(mapStateToProps)(RegisterPage)
+export default compose(
+    withService(),
+    connect(mapStateToProps, mapDispatchToProps)
+)(RegisterPage)

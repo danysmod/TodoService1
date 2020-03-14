@@ -29,10 +29,13 @@ namespace API.UI.Account
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Register(
             [FromServices] IMediator mediator,
-            [FromServices] LoginPresenter presenter,
-            [FromBody][Required] LoginRequest request)
+            [FromServices] RegisterPresenter presenter,
+            [FromBody][Required] RegisterRequest request)
         {
-            var input = new RegisterInput(request.Username, request.Password);
+            var input = new RegisterInput(
+                request.Email, 
+                request.Password, 
+                request.Username);
             await mediator.PublishAsync(input);
             return presenter.ViewModel;
         }

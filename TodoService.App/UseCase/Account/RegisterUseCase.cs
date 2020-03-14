@@ -45,7 +45,7 @@
             var appUser = new ApplicationUser()
             {
                 Email = input.Email,
-                UserName = input.Email,
+                UserName = input.UserName,
                 AccountId = ((Account)account).Id,
             };
             var res = await userManager.CreateAsync(appUser, input.Password);
