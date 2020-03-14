@@ -1,14 +1,21 @@
 ﻿namespace App.Boundaries.Account.Register
 {
+    using TodoService.Domain;
     using TodoService.Identity;
 
-    public class RegisterOutput
+    public sealed class RegisterOutput
     {
-        public RegisterOutput(ApplicationUser user)
+        public RegisterOutput(string token, IAccount account, ApplicationUser applicationUser)
         {
-            User = user;
+            Token = token;
+            Account = (Account)account;
+            UserName = applicationUser.UserName;
         }
 
-        public ApplicationUser User { get; }
+        public string Token { get; }
+
+        public string UserName { get; }
+
+        public Account Account { get; }
     }
 }

@@ -2,7 +2,8 @@
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Collections.ObjectModel;
+
     public sealed class TableCollection
     {
         private readonly IList<ITable> tables;
@@ -30,6 +31,8 @@
                 tables.Add(task);
             }
         }
+
+        public IReadOnlyCollection<ITable> GetTables() => new ReadOnlyCollection<ITable>(this.tables);
 
         public void Add(ITable task) => tables.Add(task);
     }

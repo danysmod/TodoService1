@@ -4,10 +4,16 @@
 
     public interface ITableRepository
     {
-        Task<ITable> GetTable(BaseEntityId entityId);
+        Task<ITable> GetTableAsync(BaseEntityId tableId, BaseEntityId accountId);
 
-        Task AddTask(ITableTask task);
+        Task AddTaskAsync(ITableTask task);
 
-        Task AddTable(ITable table);
+        Task AddTableAsync(ITable table);
+
+        Task<ITableTask> GetTaskAsync(BaseEntityId tableId, BaseEntityId accountId, BaseEntityId taskId);
+
+        Task Update(ITable table);
+
+        Task Update(ITableTask task);
     }
 }

@@ -2,5 +2,6 @@
 {
     public interface IAccount
     {
+        BaseEntityId Id { get; }
     }
 }

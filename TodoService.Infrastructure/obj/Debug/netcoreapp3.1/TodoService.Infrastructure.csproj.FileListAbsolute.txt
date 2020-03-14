@@ -11,6 +11,7 @@ C:\Projects\TodoService1\TodoService.Infrastructure\bin\Debug\netcoreapp3.1\Todo
 C:\Projects\TodoService1\TodoService.Infrastructure\obj\Debug\netcoreapp3.1\TodoService.Infrastructure.csproj.CopyComplete
 C:\Projects\TodoService1\TodoService.Infrastructure\obj\Debug\netcoreapp3.1\TodoService.Infrastructure.dll
 C:\Projects\TodoService1\TodoService.Infrastructure\obj\Debug\netcoreapp3.1\TodoService.Infrastructure.pdb
+C:\Dany\GIT\TodoService1\TodoService.Infrastructure\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Dany\GIT\TodoService1\TodoService.Infrastructure\bin\Debug\netcoreapp3.1\TodoService.Infrastructure.deps.json
 C:\Dany\GIT\TodoService1\TodoService.Infrastructure\bin\Debug\netcoreapp3.1\TodoService.Infrastructure.runtimeconfig.json
 C:\Dany\GIT\TodoService1\TodoService.Infrastructure\bin\Debug\netcoreapp3.1\TodoService.Infrastructure.runtimeconfig.dev.json
@@ -24,4 +25,3 @@ C:\Dany\GIT\TodoService1\TodoService.Infrastructure\obj\Debug\netcoreapp3.1\Todo
 C:\Dany\GIT\TodoService1\TodoService.Infrastructure\obj\Debug\netcoreapp3.1\TodoService.Infrastructure.csproj.CopyComplete
 C:\Dany\GIT\TodoService1\TodoService.Infrastructure\obj\Debug\netcoreapp3.1\TodoService.Infrastructure.dll
 C:\Dany\GIT\TodoService1\TodoService.Infrastructure\obj\Debug\netcoreapp3.1\TodoService.Infrastructure.pdb
-C:\Dany\GIT\TodoService1\TodoService.Infrastructure\bin\Debug\netcoreapp3.1\appsettings.json

@@ -17,7 +17,7 @@
         public async Task<IAccount> CreateAccountAsync()
         {
             var account = accountFactory.NewAccount();
-            await accountRepository.Add(account);
+            await accountRepository.AddAsync(account);
             return account;
         }
     }

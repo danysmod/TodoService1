@@ -3,7 +3,7 @@
     using Microsoft.EntityFrameworkCore;
     using Entities;
 
-    public class TodoServiceContext : DbContext
+    public sealed class TodoServiceContext : DbContext
     {
         public TodoServiceContext(DbContextOptions<TodoServiceContext> options)
             :base(options)

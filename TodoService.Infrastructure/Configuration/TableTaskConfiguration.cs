@@ -23,6 +23,7 @@
                         v => new TaskText(v))
                    .IsRequired();
 
+
             builder.Property(x => x.CreateDate)
                    .HasConversion(
                             v => v,

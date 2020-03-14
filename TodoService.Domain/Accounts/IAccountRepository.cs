@@ -4,6 +4,8 @@
 
     public interface IAccountRepository
     {
-        Task Add(IAccount account);
+        Task AddAsync(IAccount account);
+
+        Task<IAccount> GetAccountAsync(BaseEntityId id);
     }
 }

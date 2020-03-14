@@ -4,6 +4,7 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using TodoService.Domain;
+    using TodoService.Domain.Services;
     using TodoService.Infrastructure;
 
     public static class InfrastructureExtensions
@@ -20,6 +21,7 @@
 
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<ITableRepository, TableRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;
         }

@@ -1,6 +1,6 @@
 ﻿namespace App.Boundaries.Account.Register
 {
-    public interface IOutputPort : IOutputPort<RegisterOutput>
+    public interface IOutputPort : IOutputPort<RegisterOutput>, IOutputError
     {
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace App.Boundaries.Account.Register
 {
-    public class RegisterInput
+    public sealed class RegisterInput
     {
         public RegisterInput(string email, string password)
         {

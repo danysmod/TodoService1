@@ -1,12 +1,14 @@
 namespace API
 {
     using API.DI;
-    using API.DI.Identity;
+    using API.DI.Security;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
+    using System.IO;
 
     public class Startup
     {
@@ -17,7 +19,6 @@ namespace API
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddControllersAsServices();
@@ -25,10 +26,14 @@ namespace API
             services.AddMediator();
             services.AddSQLServerPersistence(Configuration);
             services.AddPresenters();
-            services.AddIdentityPersistance(Configuration);
+            services.AddIdentityPersistence(Configuration);
+            services.AddJwtAuthenticationPersistence(Configuration);
+            services.AddSpaStaticFiles(config =>
+            {
+                config.RootPath = "client/build";
+            });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -36,16 +41,27 @@ namespace API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
 
-            app.UseRouting();
-
-            app.UseAuthorization();
             app.UseAuthentication();
+            
+            app.UseHttpsRedirection();
+            app.UseRouting();
+            
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSpa(spa =>
+            {
+                spa.Options.SourcePath = Path.Join(env.ContentRootPath, "client");
+
+                if (env.IsDevelopment())
+                {
+                    spa.UseReactDevelopmentServer(npmScript: "start");
+                }
             });
         }
     }

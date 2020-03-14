@@ -5,7 +5,7 @@
     using Microsoft.Extensions.Configuration;
     using System.IO;
 
-    public class ContextFactory : IDesignTimeDbContextFactory<TodoServiceContext>
+    public sealed class ContextFactory : IDesignTimeDbContextFactory<TodoServiceContext>
     {
         public TodoServiceContext CreateDbContext(string[] args)
         {

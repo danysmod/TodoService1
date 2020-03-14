@@ -2,6 +2,9 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Linq;
+    using System.Threading.Tasks;
 
     public sealed class TableTaskCollection
     {
@@ -32,5 +35,17 @@
         }
 
         public void Add(ITableTask task) => this.tasks.Add(task);
+
+        public IList<ITableTask> GetTasks() => new List<ITableTask>(tasks);
+
+        public IList<ITableTask> Delete()
+        {
+            foreach(var task in tasks)
+            {
+                task.Delete();
+            }
+
+            return this.tasks;
+        }
     }
 }

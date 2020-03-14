@@ -20,7 +20,13 @@
             builder.Property(b => b.Name)
                    .HasConversion(
                         v => v.ToString(),
-                        v => new TableName(v))
+                        v => new TableTitle(v))
+                   .IsRequired();
+
+            builder.Property(b => b.AccountId)
+                   .HasConversion(
+                        v => v.ToGuid(),
+                        v => new BaseEntityId(v))
                    .IsRequired();
 
             builder.Ignore(p => p.Tasks);

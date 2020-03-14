@@ -1,19 +1,15 @@
 ﻿namespace API.UI.Table.CreateTable
 {
+    using API.ViewModels;
     using System;
     
     public sealed class CreateTableResponse
     {
-        public CreateTableResponse(
-            string tableName,
-            Guid tableId)
+        public CreateTableResponse(TableDetailsModel tableModel)
         {
-            TableName = tableName;
-            TableId = tableId;
+            TableModel = tableModel;
         }
 
-        public string TableName { get; }
-        
-        public Guid TableId { get; }
+        public TableDetailsModel TableModel { get; }   
     }
 }

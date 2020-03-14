@@ -1,6 +1,6 @@
 ﻿namespace App.Boundaries.Table.CreateTable
 {
-    public interface IOutputPort : IOutputPort<CreateTableOutput>
+    public interface IOutputPort : IOutputPort<CreateTableOutput>, IOutputError
     {
     }
 }

@@ -1,25 +1,47 @@
-﻿namespace API.UI.Account.Register
+﻿namespace API.UI.Account
 {
+    using API.ViewModels;
     using App.Boundaries.Account.Register;
-    using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
-    using TodoService.Identity;
+    using System.Collections.Generic;
 
-    public class RegisterPresenter : IOutputPort
+    public sealed class RegisterPresenter : IOutputPort
     {
-        private readonly SignInManager<ApplicationUser> signInManager;
-
-        public RegisterPresenter(SignInManager<ApplicationUser> signInManager)
-        {
-            this.signInManager = signInManager;
-        }
         public IActionResult ViewModel { get; private set; }
+
         public void Output(RegisterOutput output)
         {
-            signInManager.SignInAsync(output.User, false);
+            //var tables = new List<TableDetailsModel>();
+            //foreach (var item in output.Account.Tables.GetTables())
+            //{
+            //    var tasks = new List<TableTaskModel>();
 
-            var res = new RegisterResponse(output.User);
+            //    foreach (var task in item.GetTasks())
+            //    {
+            //        tasks.Add(new TableTaskModel(
+            //            task.Id.ToGuid(), 
+            //            task.Text.ToString(), 
+            //            (int)task.State));
+            //    }
+
+            //    tables.Add(new TableDetailsModel(
+            //        item.Name.ToString(), 
+            //        item.Id.ToGuid(), 
+            //        (int)item.State, 
+            //        tasks));
+            //}
+
+            //var accountDetails = new AccountDetailsModel(
+            //    output.UserName, tables, output.Account.Id.ToGuid());
+
+            var res = "ABC";
+
             ViewModel = new OkObjectResult(res);
+        }
+
+        public void WriteError(string message)
+        {
+            ViewModel = new BadRequestObjectResult(message);
         }
     }
 }

@@ -13,3 +13,4 @@ C:\Dany\GIT\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.
 C:\Dany\GIT\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.AssemblyInfo.cs
 C:\Dany\GIT\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.dll
 C:\Dany\GIT\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.pdb
+C:\Dany\GIT\TodoService1\TodoService.Domain\obj\Debug\netcoreapp3.1\TodoService.Domain.csprojAssemblyReference.cache

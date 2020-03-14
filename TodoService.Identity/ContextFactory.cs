@@ -9,22 +9,22 @@
     {
         public TodoServiceIdentityContext CreateDbContext(string[] args)
         {
-            var connectionString = "Data Source=localhost;Initial Catalog=TodoService;Integrated Security=True";
+            var connectionString = ReadDefaultConnectionString();
 
             var builder = new DbContextOptionsBuilder<TodoServiceIdentityContext>();
             builder.UseSqlServer(connectionString);
             return new TodoServiceIdentityContext(builder.Options);
         }
 
-        //private string ReadDefaultConnectionString()
-        //{
-        //    IConfigurationRoot configuration = new ConfigurationBuilder().
-        //        .SetBasePath(Directory.GetCurrentDirectory())
-        //        .AddJsonFile("appsettings.json")
-        //        .Build();
+        private string ReadDefaultConnectionString()
+        {
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .Build();
 
-        //    string connectionString = configuration.GetConnectionString("DefaultConnection");
-        //    return connectionString;
-        //}
+            string connectionString = configuration.GetConnectionString("DefaultConnection");
+            return connectionString;
+        }
     }
 }

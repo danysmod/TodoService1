@@ -1,5 +1,6 @@
 ﻿namespace TodoService.Domain
 {
+    using System.Linq;
     using System.Threading.Tasks;
 
     public class TableService
@@ -17,17 +18,23 @@
         public async Task<ITableTask> AddTask(ITable table, TaskText taskText)
         {
             var task = tableFactory.NewTask(table, taskText);
-            await tableRepository.AddTask(task);
+            await tableRepository.AddTaskAsync(task);
             return task;
         }
 
-        public async Task<ITable> CreateTable(TableName name)
+        public async Task<ITable> CreateTable(TableTitle name, IAccount account)
         {
-            var table = tableFactory.NewTable(name);
-            await tableRepository.AddTable(table);
+            var table = tableFactory.NewTable(name, account);
+            await tableRepository.AddTableAsync(table);
 
             return table;
         }
 
+        public async Task DeleteTable(ITable table)
+        {
+            var deletedTable = table.Delete();
+            deletedTable.GetTasks().Select(async x => await tableRepository.Update(x));
+            await tableRepository.Update(deletedTable);
+        }
     }
 }

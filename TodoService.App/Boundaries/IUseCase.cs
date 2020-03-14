@@ -4,6 +4,6 @@
     
     public interface IUseCase<in TUseCaseInput>
     {
-        Task Execute(TUseCaseInput input);
+        Task Handle(TUseCaseInput input);
     }
 }

@@ -1,14 +1,18 @@
-﻿using TodoService.Identity;
+﻿using API.ViewModels;
+using TodoService.Identity;
 
-namespace API.UI.Account.Register
+namespace API.UI.Account
 {
     public sealed class RegisterResponse
     {
-        public RegisterResponse(ApplicationUser user)
+        public RegisterResponse(string token, AccountDetailsModel accountDetails)
         {
-            User = user;
+            Token = token;
+            AccountDetails = accountDetails;
         }
 
-        public ApplicationUser User;
+        public string Token { get; }
+
+        public AccountDetailsModel AccountDetails { get; }
     }
 }
