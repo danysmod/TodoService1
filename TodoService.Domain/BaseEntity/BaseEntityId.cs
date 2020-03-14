@@ -1,4 +1,4 @@
-namespace Domain
+namespace TodoService.Domain
 {
     using System;
     
@@ -19,5 +19,10 @@ namespace Domain
         public override string ToString() => _guid.ToString();
 
         public Guid ToGuid() => _guid;
+
+        public bool Equals(BaseEntityId other)
+        {
+            return this._guid == other._guid;
+        }
     }
 }

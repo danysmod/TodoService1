@@ -1,0 +1,25 @@
+.todo-header {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(2, 106, 167);
+}
+
+
+.todo-header .logo{
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+}
+
+.todo-header .logo-icon{
+    padding-right: 0.5rem;
+    font-size: 2rem;
+}
+
+.todo-header .nickname{
+    align-self: center;
+    font-size: 1.5rem;
+    padding-right: 3.5rem;
+}

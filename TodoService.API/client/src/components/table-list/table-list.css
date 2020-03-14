@@ -1,0 +1,16 @@
+.table-list{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+}
+
+.table-list .table-list-item-card{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.table-list-item .add-table{
+    margin: auto;
+}

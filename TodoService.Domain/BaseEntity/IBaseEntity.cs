@@ -1,10 +1,10 @@
-namespace Domain
+namespace TodoService.Domain
 {
     using System;
     public interface IBaseEntity
     {
         BaseEntityId Id { get; }
-        DateTime CreateTime { get; }
-        DateTime EditTime { get; }
+        DateTime CreateDate { get; }
+        DateTime? EditDate { get; }
     }
 }
