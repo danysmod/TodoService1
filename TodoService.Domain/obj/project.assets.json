@@ -3412,19 +3412,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\danys\\.nuget\\packages\\": {}
+    "C:\\Users\\Danysmod\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dany\\GIT\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj",
+      "projectUniqueName": "C:\\Dany\\Projects\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj",
       "projectName": "TodoService.Domain",
-      "projectPath": "C:\\Dany\\GIT\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj",
-      "packagesPath": "C:\\Users\\danys\\.nuget\\packages\\",
-      "outputPath": "C:\\Dany\\GIT\\TodoService1\\TodoService.Domain\\obj\\",
+      "projectPath": "C:\\Dany\\Projects\\TodoService1\\TodoService.Domain\\TodoService.Domain.csproj",
+      "packagesPath": "C:\\Users\\Danysmod\\.nuget\\packages\\",
+      "outputPath": "C:\\Dany\\Projects\\TodoService1\\TodoService.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\danys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Danysmod\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3432,7 +3432,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://repo.infranet.co/repository/nuget-technology/": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -3468,7 +3469,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

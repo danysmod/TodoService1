@@ -19,6 +19,7 @@ namespace API.UI
         {
             var nameIdentifier = this.HttpContext.User.Claims
                                                 .FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier);
+            abasdf
             return new string[] { nameIdentifier?.Value, "value1", "value2" };
         }
     }
