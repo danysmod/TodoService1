@@ -15,7 +15,7 @@ namespace App.UseCase.Account
     {
         private readonly IOutputPort outputPort;asdfasdfasdf
         private readonly IAccountRepository accountRepository;
-        private readonly UserManager<ApplicationUser> userManager;
+        private readonly UserManager<ApplicationUser> userManager;asdfasdf
 
         public GetAccountDetailsUseCase(IOutputPort outputPort,
                                         IAccountRepository accountRepository,
